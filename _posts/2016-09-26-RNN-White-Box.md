@@ -3,7 +3,9 @@ layout: post
 title: RNN White Box
 ---
 
-d ajkd jkn lkjd kljd 
+Resources for learning RNN.
+
+Backpropagation Through Time in detail.
 
 
 
