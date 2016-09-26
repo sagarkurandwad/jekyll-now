@@ -3,16 +3,8 @@ layout: post
 title: RNN White Box
 ---
 
-Resources for learning RNN.
-
-Backpropagation Through Time in detail.
-
-
-
-
-
-
-
+'Resources for learning RNN.
+Backpropagation Through Time in detail.'
 
 LSTMs and GRUs (varinats of vanilla RNNs) have proven to be extremely effective in Computer Vision and Natural Language Processing applications. Of all the excellent resources on RNNs available online, following are the ones that helped me understand them clearly:
 
