@@ -5,7 +5,7 @@ title: RNN White Box
 
 LSTMs and GRUs (varinats of vanilla RNNs) have proven to be extremely effective in Computer Vision and Natural Language Processing applications. Of all the excellent resources on RNNs available online, following are the ones that helped me understand them clearly:
 
-
+1. [Understanding LSTM Networks](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
 
