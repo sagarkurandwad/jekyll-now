@@ -3,7 +3,9 @@ layout: post
 title: RNN White Box
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+LSTMs and GRUs (varinats of vanilla RNNs) have proven to be extremely effective in Computer Vision and Natural Language Processing applications. Of all the excellent resources on RNNs available online, following are the ones that helped me understand them clearly:
+
+
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
 
