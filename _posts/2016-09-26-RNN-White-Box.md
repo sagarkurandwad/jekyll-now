@@ -5,9 +5,9 @@ title: RNN White Box
 
 LSTMs and GRUs (varinats of vanilla RNNs) have proven to be extremely effective in Computer Vision and Natural Language Processing applications. Of all the excellent resources on RNNs available online, following are the ones that helped me understand them clearly:
 
-1. [Understanding LSTM Networks]:(http://colah.github.io/posts/2015-08-Understanding-LSTMs/) Excellent block diagrams and clear explanation. 
-2. [The Unreasonable Effectiveness of Recurrent Neural Networks]:(http://karpathy.github.io/2015/05/21/rnn-effectiveness/)
-3. [Recurrent Neural Networks Tutorial, Part 1 to Part 3 ](http://www.wildml.com/2015/09/recurrent-neural-networks-tutorial-part-1-introduction-to-rnns/)
+1. [Understanding LSTM Networks:](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) Excellent block diagrams and clear explanation. 
+2. [The Unreasonable Effectiveness of Recurrent Neural Networks:](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)
+3. [Recurrent Neural Networks Tutorial, Part 1 to Part 3:](http://www.wildml.com/2015/09/recurrent-neural-networks-tutorial-part-1-introduction-to-rnns/)
 
 
 
