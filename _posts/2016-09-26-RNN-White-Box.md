@@ -17,7 +17,7 @@ LSTMs and GRUs (varinats of vanilla RNNs) have proven to be extremely effective 
 
 In this section I will explain BPTT wrt the types of RNN sequences a problem could be categorized into (refer [Andrej Karpathy's blog](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)).
 
-### One-To-One
+### One-To-One Sequence
 
 ![](https://github.com/sagarkurandwad/sagarkurandwad.github.io/blob/master/images/VanillaNN.png)
 
