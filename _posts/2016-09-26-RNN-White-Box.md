@@ -32,7 +32,9 @@ Befor we get into the details of these architectures, let us consider a vanilla 
 
 ![](/images/VanillaNN.jpg  "Vanilla Neural Network")
 
-'Figure 1' shows a vanilla neural network architecture. 'D' dimensional input vector is conneted to the neural network unit through weights 'U'. The neural network unit is inturn conneted to the 'K' dimensional output vector through weights 'V'. The neural network unit consists of a single layer of 'H' neurons with 'tanh' activation.
+'Figure 1' shows a vanilla neural network architecture. 'D' dimensional input vector is conneted to the neural network unit through weights 'U'. The neural network unit is inturn conneted to the 'K' dimensional output vector through weights 'V'. The neural network unit consists of a single layer of 'H' neurons with 'tanh' activation. Gradinets for optimzation of this network can be computed using standard back propagation.
+
+
 
 
 
