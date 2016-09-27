@@ -18,6 +18,11 @@ LSTMs and GRUs (varinats of vanilla RNNs) have proven to be extremely effective 
 
 ## Backpropagation Through Time (BPTT)
 
+![](/images/VanillaNN.jpg  "Vanilla Neural Network")
+
+'Figure 1' shows a vanilla neural network architecture. 'D' dimensional input vector is conneted to the neural network unit through weights 'U'. The neural network unit is inturn conneted to the 'K' dimensional output vector through weights 'V'. The neural network unit consists of a single layer of 'H' neurons with 'tanh' activation. Gradinets for optimzation of this network can be computed using standard back propagation.
+
+
 The [types of RNN architecture](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) can be categorised into:
 
 1. Synchronised Many-To-Many
@@ -29,15 +34,5 @@ The [types of RNN architecture](http://karpathy.github.io/2015/05/21/rnn-effecti
 4. One-To-Many
 
 Befor we get into the details of these architectures, let us consider a vanilla neural network. 
-
-![](/images/VanillaNN.jpg  "Vanilla Neural Network")
-
-'Figure 1' shows a vanilla neural network architecture. 'D' dimensional input vector is conneted to the neural network unit through weights 'U'. The neural network unit is inturn conneted to the 'K' dimensional output vector through weights 'V'. The neural network unit consists of a single layer of 'H' neurons with 'tanh' activation. Gradinets for optimzation of this network can be computed using standard back propagation.
-
-
-
-
-
-
 
 
