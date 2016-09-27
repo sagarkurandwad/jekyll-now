@@ -36,7 +36,7 @@ RNNs, on the other hand, allow mapping between variable length input sequnces to
 
 ![](/images/RNNSyncIpOp.jpg  "RNN architecture for synchronized input and output sequences")
 
-
+The above RNN could be used in applications such as Part-Of-Speech tagging or video frame categorization, where the classification 
 
 
 
