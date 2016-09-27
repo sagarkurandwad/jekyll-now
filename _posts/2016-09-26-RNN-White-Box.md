@@ -15,4 +15,5 @@ LSTMs and GRUs (varinats of vanilla RNNs) have proven to be extremely effective 
 
 ## Backpropagation Through Time (BPTT)
 
-In this section I will explain BPTT wrt the types of RNN sequences a problem could be categorized into ([Andrej Karpathy's blog](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)).
+In this section I will explain BPTT wrt the types of RNN sequences a problem could be categorized into (refer [Andrej Karpathy's blog](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)).
+
