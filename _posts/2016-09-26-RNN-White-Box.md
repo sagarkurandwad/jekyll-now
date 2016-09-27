@@ -19,7 +19,7 @@ In this section I will explain BPTT wrt the types of RNN sequences a problem cou
 
 Figure 1 shows the vanilla neural network architecture. The 'D' dimensional input vector is conneted to the neural network unit through weights 'U'. The neural network unit is inturn conneted to the 'K' dimensional output vector through weights 'V'. The neural network unit consists of a single layer of 'H' neurons with 'tanh' activation.
 
-![alt text](https://github.com/sagarkurandwad/sagarkurandwad.github.io/blob/master/images/VanillaNN.png)
+![](https://github.com/sagarkurandwad/sagarkurandwad.github.io/blob/master/images/VanillaNN.png)
 
 
 
