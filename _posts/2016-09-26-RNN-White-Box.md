@@ -34,6 +34,9 @@ RNNs, on the other hand, allow mapping between variable length input sequnces to
 
 ### Synchronised input and output sequences
 
+![](/images/RNNSyncIpOp.jpg  "RNN architecture for synchronized input and output sequences")
+
+
 
 
 
