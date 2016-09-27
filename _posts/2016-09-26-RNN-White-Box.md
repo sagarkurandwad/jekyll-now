@@ -13,6 +13,6 @@ LSTMs and GRUs (varinats of vanilla RNNs) have proven to be extremely effective 
 3. [The Unreasonable Effectiveness of Recurrent Neural Networks:](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) Types of sequence problems and fun applications in NLP.
 4. [Awesome Recurrent Neural Networks:](https://github.com/kjw0612/awesome-rnn) A curated list of RNN resources.
 
-# Backpropagation Through Time
+## Backpropagation Through Time (BPTT)
 
-[Andrej Karpathy's blog](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) 
+In this section I will explain BPTT wrt the types of RNN sequences a problem could be categorized into ([Andrej Karpathy's blog](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)).
