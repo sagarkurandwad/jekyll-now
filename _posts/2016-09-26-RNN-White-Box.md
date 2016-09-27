@@ -22,15 +22,18 @@ LSTMs and GRUs (varinats of vanilla RNNs) have proven to be extremely effective 
 
 'Figure 1' shows a vanilla neural network architecture. 'D' dimensional input vector is conneted to the neural network unit through weights 'U'. The neural network unit is inturn conneted to the 'K' dimensional output vector through weights 'V'. The neural network unit consists of a single layer of 'H' neurons with 'tanh' activation. Gradinets for optimzation of this network can be computed using standard back propagation.
 
-RNNs, on the other hand, allow mapping between variable length input sequnces to variable length output sequences. Thus, gradients need to be backpropagated in time to update weights. Depending on the type of application, RNN sequences can be broadly categorized [(Refer )](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) into:
+RNNs, on the other hand, allow mapping between variable length input sequnces to variable length output sequences. Thus, gradients need to be backpropagated in time to update weights. Depending on the type of application, RNN sequences can be broadly categorized [(Refer Andrej Karpathy's blog)](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) into:
 
 1. Synchronised input and output sequences
 
 2. Unsynchronised input and output sequences
 
-3. Sequence input
+3. Input sequences
 
-4. Sequence output
+4. Output sequences
+
+### Synchronised input and output sequences
+
 
 
 
