@@ -1,6 +1,7 @@
 ---
 layout: post
 title: RNN White Box
+use_math: true
 ---
 
 * Resources for learning RNN.  
