@@ -50,19 +50,19 @@ For RNN unit at $t$, compute the following:
 
 $$\frac{\partial E_{t}}{\partial y^k_{t}} \tag{1}\label{1}$$
 
-$$\frac{\partial E_{t}}{\partial S^h_{t}} = \sum_{k=1}^K \frac{\partial E_{t}}{\partial y^k_{t}}\frac{\partial y^k_{t}}{\partial S^h_{t}} \tag{2}\label{2}$$
+$$\frac{\partial E_{t}}{\partial s^h_{t}} = \sum_{k=1}^K \frac{\partial E_{t}}{\partial y^k_{t}}\frac{\partial y^k_{t}}{\partial s^h_{t}} \tag{2}\label{2}$$
 
-$$\alpha_{t,dh} = \frac{\partial S^h_{t}}{\partial u_{dh}} + \frac{\partial S^h_{t}}{\partial S^h_{t-1}}\alpha_{t-1,dh} \tag{3}\label{3}$$
+$$\alpha_{t,dh} = \frac{\partial s^h_{t}}{\partial u_{dh}} + \frac{\partial s^h_{t}}{\partial s^h_{t-1}}\alpha_{t-1,dh} \tag{3}\label{3}$$
 
-$$\beta_{t,ij} = \frac{\partial S^j_{t}}{\partial w_{ij}} + \frac{\partial S^j_{t}}{\partial S^j_{t-1}}\beta_{t-1,ij} \tag{4}\label{4}$$
+$$\beta_{t,ij} = \frac{\partial s^j_{t}}{\partial w_{ij}} + \frac{\partial s^j_{t}}{\partial s^j_{t-1}}\beta_{t-1,ij} \tag{4}\label{4}$$
 
 Finally,
 
 $$\frac{\partial E_{t}}{\partial v_{hk}} = \frac{\partial E_{t}}{\partial y^k_{t}}\frac{\partial y^k_{t}}{\partial v_{hk}} \tag{5}\label{5}$$
 
-$$\frac{\partial E_{t}}{\partial u_{dh}} = \frac{\partial E_{t}}{\partial S^h_{t}}\alpha_{t,dh} \tag{6}\label{6}$$
+$$\frac{\partial E_{t}}{\partial u_{dh}} = \frac{\partial E_{t}}{\partial s^h_{t}}\alpha_{t,dh} \tag{6}\label{6}$$
 
-$$\frac{\partial E_{t}}{\partial w_{ij}} = \frac{\partial E_{t}}{\partial S^j_{t}}\beta_{t,ij} \tag{7}\label{7}$$
+$$\frac{\partial E_{t}}{\partial w_{ij}} = \frac{\partial E_{t}}{\partial s^j_{t}}\beta_{t,ij} \tag{7}\label{7}$$
 
 where,
 
