@@ -36,7 +36,7 @@ RNNs, on the other hand, allow mapping between variable length input sequnces to
 
 ![](/images/RNNSyncIpOp.jpg  "RNN architecture for synchronized input and output sequences")
 
-Extending vanilla neural network architecture from Figure 1, Figure 2 shows a sequence of neural network units mapping the input sequences 'Xi's to output sequences 'Yi's. Such architecture finds place in frame level video classification where the prediction depends on the current frame as well as the frames that appared before it. 'Si's are the 'H' dimensional output of the hidden layer in the neural network units. These are the memory of the network which transfer previous state information along the chain. 'St' forms the input to neural network unit at 't+1' through weights 'W'. Weights 'W','U' and 'V' are shared across RNN units.
+Extending vanilla neural network architecture from Figure 1, Figure 2 shows a sequence of neural network units mapping the input sequences 'Xi's to output sequences 'Yi's. Such architecture finds place in frame level video classification where the prediction depends on the current frame as well as the frames that appared before it. 'Si's are the 'H' dimensional output of the hidden layer in the neural network units. These are the memory of the network which transfer previous state information along the chain. In addition to 'Xt', 'St' forms the input to neural network unit at 't+1' through weights 'W'. Weights 'W','U' and 'V' are shared across RNN units.
 
 
 
