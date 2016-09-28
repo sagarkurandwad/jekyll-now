@@ -48,7 +48,7 @@ $\frac{\partial E}{\partial v_{hk}}$, $\frac{\partial E}{\partial u_{ij}}$, $\fr
 
 #### Consider RNN unit at '$t = 0$' 
 
-Compute the following
+We first compute the following
 
 $$\frac{\partial E_{0}}{\partial y^k_{0}} \tag{1}\label{1}$$
 
@@ -67,3 +67,16 @@ $$\frac{\partial E_{0}}{\partial u_{dh}} = \frac{\partial E_{0}}{\partial S^h_{0
 $$\frac{\partial E_{0}}{\partial w_{ij}} = \frac{\partial E_{0}}{\partial S^j_{0}}\beta_{ij} \tag{7}\label{7}$$
 
 where $$k \in \{1,2,3....K\}$$, $$i,j,h \in \{1,2,3....H\}$$ and $$d \in \{1,2,3....D\}$$.
+
+### Consider RNN unit at '$t$'
+
+Along similar lines, compute: 
+
+$$\frac{\partial E_{t}}{\partial y^k_{t}} \tag{8}\label{8}$$
+
+$$\frac{\partial E_{t}}{\partial S^h_{t}} = \sum_{k=1}^K \frac{\partial E_{t}}{\partial y^k_{t}}\frac{\partial y^k_{t}}{\partial S^h_{t}} \tag{9}\label{9}$$
+
+$$\alpha_{dh} := \frac{\partial S^h_{t}}{\partial u_{dh}} + \frac{\partial S^h_{t}}{\partial S^h_{t-1}}\alpha_{dh} \tag{9}\label{9}$$
+
+$$\beta_{ij} = \frac{\partial S^j_{0}}{\partial w_{ij}} \tag{4}\label{4}$$
+
