@@ -37,7 +37,7 @@ RNNs, on the other hand, allow mapping between variable length input sequnces to
 
 ![](/images/RNNSyncIpOp.jpg  "RNN architecture for synchronized input and output sequences")
 
-Extending vanilla neural network architecture from Figure 1, Figure 2 shows a sequence of neural network units mapping the input sequences 'X<sub>i</sub>'s to output sequences 'Y<sub>i</sub>'s. Such architecture finds place in frame level video classification where the prediction depends on the current frame as well as the frames that appared before it. 'S<sub>i</sub>'s are the 'H' dimensional output of the hidden layer in the neural network units. These are the memory of the network which transfer previous state information along the chain. The neural network unit at 't+1' takes input from 'X<sub>t</sub>' throught 'U' and 'S<sub>t</sub>' through 'W'. Weights 'U','V' and 'W' are shared across RNN units. 'S<sup>-1</sup>' is initialized to a vector of zeros.
+Extending vanilla neural network architecture from Figure 1, Figure 2 shows a sequence of neural network units mapping the input sequences 'X<sub>i</sub>'s to output sequences 'Y<sub>i</sub>'s. Such architecture finds place in frame level video classification where the prediction depends on the current frame as well as the frames that appared before it. 'S<sub>i</sub>'s are the 'H' dimensional output of the hidden layer in the neural network units. These are the memory of the network which transfer previous state information along the chain. The neural network unit at 't+1' takes input from 'X<sub>t</sub>' throught 'U' and 'S<sub>t</sub>' through 'W'. Weights 'U','V' and 'W' are shared across RNN units. $S_{-1}$ is initialized to a vector of zeros.
 
 
 $$ a^2 + b = c $$
