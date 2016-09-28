@@ -17,7 +17,7 @@ LSTMs and GRUs, variants of vanilla RNNs, have proven to be extremely effective 
 
 4. [Awesome Recurrent Neural Networks:](https://github.com/kjw0612/awesome-rnn) A curated list of RNN resources.
 
-## Backpropagation Through Time \(BPTT\)
+## Backpropagation Through Time (BPTT)
 
 ![](/images/VanillaNN.jpg  "Vanilla Neural Network")
 
@@ -45,7 +45,9 @@ $$\sum_{t=0}^T E_t$$
 
 and the target gradients that need to be computed are:
 
-$$\frac{\partial E}{\partial v_{hk}}$$, $$\frac{\partial E}{\partial u_{ij}}$$, $$\frac{\partial E}{\partial w_{dh}}$$
+  $\frac{\partial E}{\partial v_{hk}}$, $\frac{\partial E}{\partial u_{ij}}$, $\frac{\partial E}{\partial w_{dh}}$
+
+
 
 
 
