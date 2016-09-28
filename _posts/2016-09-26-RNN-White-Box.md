@@ -60,4 +60,6 @@ $$\beta_{ij} = \frac{\partial S^j_{0}}{\partial w_{ij}} \tag{4}\label{4}$$
 
 where $$k \in \{1,2,3....K\}$$, $$i,j,h \in \{1,2,3....H\}$$ and $$d \in \{1,2,3....D\}$$.
 
+Finally,
 
+$$\frac{\partial E_{0}}{\partial v_{hk}} = \frac{\partial E_{0}}{\partial y^k_{0}}\frac{\partial y^k_{0}}{\partial v_{hk}} \tag{5}\label{5}$$
