@@ -7,7 +7,7 @@ use_math: true
 * Resources for learning RNN.  
 * Backpropagation Through Time in detail.
 
-LSTMs and GRUs (variants of vanilla RNNs) have proven to be extremely effective in Computer Vision and Natural Language Processing applications. Of all the excellent resources on RNNs available online, following are the ones that helped me understand them clearly:
+LSTMs and GRUs, variants of vanilla RNNs, have proven to be extremely effective in Computer Vision and Natural Language Processing applications. Of all the excellent resources on RNNs available online, following are the ones that helped me understand them clearly:
 
 1. [Understanding LSTM Networks:](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) Clear explanation with block diagrams.
 
@@ -37,7 +37,7 @@ RNNs, on the other hand, allow mapping between variable length input sequnces to
 
 ![](/images/RNNSyncIpOp.jpg  "RNN architecture for synchronized input and output sequences")
 
-Extending vanilla neural network architecture from '$Figure 1$', '$Figure 2$' shows a sequence of neural network units mapping the input sequences '$X_{i}$'s to output sequences '$Y_{i}$'s. Such architecture finds place in frame level video classification where the prediction depends on the current frame as well as the frames that appared before it. '$S_{i}$'s are the '$H$' dimensional output of the hidden layer in the neural network units. These are the memory of the network which transfer previous state information along the chain. The neural network unit at '$t+1$' takes input from '$X_{i}$' throught '$U$' and '$S_{t}$' through '$W$'. Weights '$U$','$V$' and '$W$' are shared across RNN units. $S_{-1}$ is initialized to a vector of zeros.
+Extending vanilla neural network architecture from '$Figure 1$', '$Figure 2$' shows a sequence of neural network units mapping the input sequences '$X_{i}$'s to output sequences '$Y_{i}$'s. Such architecture finds place in frame level video classification where the prediction depends on the current frame as well as the frames that appared before it. '$S_{i}$'s are the '$H$' dimensional output of the hidden layer in the neural network units. These are the memory of the network which transfer previous state information along the chain. The neural network unit at '$t+1$' takes input from '$X_{i}$' throught '$U$' and '$S_{t}$' through '$W$'. Weights '$U$','$V$' and '$W$' are shared across RNN units. '$S_{-1}$' is initialized to a vector of zeros.
 
 
 $$\sum_{i=0}^T E_0$$
