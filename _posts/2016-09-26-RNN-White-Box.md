@@ -46,47 +46,23 @@ $$E = \sum_{t=0}^T E_t$$
 where '$T$' is the length of input and output sequences. 
 $\frac{\partial E}{\partial v_{hk}}$, $\frac{\partial E}{\partial u_{ij}}$, $\frac{\partial E}{\partial w_{dh}}$ are the target gradients that need to be computed.
 
-#### RNN unit at '$t = 0$' 
+For RNN unit at $t$, compute the following:
 
-We first compute the following
+$$\frac{\partial E_{t}}{\partial y^k_{t}} \tag{1}\label{1}$$
 
-$$\frac{\partial E_{0}}{\partial y^k_{0}} \tag{1}\label{1}$$
+$$\frac{\partial E_{t}}{\partial S^h_{t}} = \sum_{k=1}^K \frac{\partial E_{t}}{\partial y^k_{t}}\frac{\partial y^k_{t}}{\partial S^h_{t}} \tag{2}\label{2}$$
 
-$$\frac{\partial E_{0}}{\partial S^h_{0}} = \sum_{k=1}^K \frac{\partial E_{0}}{\partial y^k_{0}}\frac{\partial y^k_{0}}{\partial S^h_{0}} \tag{2}\label{2}$$
+$$\alpha_{t,dh} = \frac{\partial S^h_{t}}{\partial u_{dh}} + \frac{\partial S^h_{t}}{\partial S^h_{t-1}}\alpha_{t-1,dh} \tag{3}\label{3}$$
 
-$$\alpha_{0,dh} = \frac{\partial S^h_{0}}{\partial u_{dh}} \tag{3}\label{3}$$
-
-$$\beta_{0,ij} = \frac{\partial S^j_{0}}{\partial w_{ij}} \tag{4}\label{4}$$
+$$\beta_{t,ij} = \frac{\partial S^j_{t}}{\partial w_{ij}} + \frac{\partial S^j_{t}}{\partial S^j_{t-1}}\beta_{t-1,ij} \tag{4}\label{4}$$
 
 Finally,
 
-$$\frac{\partial E_{0}}{\partial v_{hk}} = \frac{\partial E_{0}}{\partial y^k_{0}}\frac{\partial y^k_{0}}{\partial v_{hk}} \tag{5}\label{5}$$
+$$\frac{\partial E_{t}}{\partial v_{hk}} = \frac{\partial E_{t}}{\partial y^k_{t}}\frac{\partial y^k_{t}}{\partial v_{hk}} \tag{5}\label{5}$$
 
-$$\frac{\partial E_{0}}{\partial u_{dh}} = \frac{\partial E_{0}}{\partial S^h_{0}}\alpha_{0,dh} \tag{6}\label{6}$$
+$$\frac{\partial E_{t}}{\partial u_{dh}} = \frac{\partial E_{t}}{\partial S^h_{t}}\alpha_{t,dh} \tag{6}\label{6}$$
 
-$$\frac{\partial E_{0}}{\partial w_{ij}} = \frac{\partial E_{0}}{\partial S^j_{0}}\beta_{0,ij} \tag{7}\label{7}$$
+$$\frac{\partial E_{t}}{\partial w_{ij}} = \frac{\partial E_{t}}{\partial S^j_{t}}\beta_{t,ij} \tag{7}\label{7}$$
 
-where $$k \in \{1,2,3....K\}$$, $$i,j,h \in \{1,2,3....H\}$$ and $$d \in \{1,2,3....D\}$$.
-
-#### RNN unit at '$t$'
-
-Along similar lines, compute: 
-
-$$\frac{\partial E_{t}}{\partial y^k_{t}} \tag{8}\label{8}$$
-
-$$\frac{\partial E_{t}}{\partial S^h_{t}} = \sum_{k=1}^K \frac{\partial E_{t}}{\partial y^k_{t}}\frac{\partial y^k_{t}}{\partial S^h_{t}} \tag{9}\label{9}$$
-
-$$\alpha_{t,dh} = \frac{\partial S^h_{t}}{\partial u_{dh}} + \frac{\partial S^h_{t}}{\partial S^h_{t-1}}\alpha_{t-1,dh} \tag{10}\label{10}$$
-
-$$\beta_{t,ij} = \frac{\partial S^j_{t}}{\partial w_{ij}} + \frac{\partial S^j_{t}}{\partial S^j_{t-1}}\beta_{t-1,ij} \tag{11}\label{11}$$
-
-Finally,
-
-$$\frac{\partial E_{t}}{\partial v_{hk}} = \frac{\partial E_{t}}{\partial y^k_{t}}\frac{\partial y^k_{t}}{\partial v_{hk}} \tag{12}\label{12}$$
-
-$$\frac{\partial E_{t}}{\partial u_{dh}} = \frac{\partial E_{t}}{\partial S^h_{t}}\alpha_{t,dh} \tag{13}\label{13}$$
-
-$$\frac{\partial E_{t}}{\partial w_{ij}} = \frac{\partial E_{t}}{\partial S^j_{t}}\beta_{t,ij} \tag{14}\label{14}$$
-
-where $$k \in \{1,2,3....K\}$$, $$i,j,h \in \{1,2,3....H\}$$, $$d \in \{1,2,3....D\}$$, $$\alpha_{-1,dh} = 0$$,$$\beta_{-1,ij} = 0$$ and $$S_{-1} = [0\;0\;0\;0\;...\;0]^T_{H*1}$$ 
+where $$k \in \{1,2,3....K\}$$, $$i,j,h \in \{1,2,3....H\}$$, $$d \in \{1,2,3....D\}$$, $$\alpha_{-1,dh} = 0$$, $$\beta_{-1,ij} = 0$$ and $$S_{-1} = [0\;0\;0\;0\;...\;0]^T_{H X 1}$$ 
 
