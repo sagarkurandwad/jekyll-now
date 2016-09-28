@@ -80,3 +80,12 @@ $$\alpha_{t,dh} = \frac{\partial S^h_{t}}{\partial u_{dh}} + \frac{\partial S^h_
 
 $$\beta_{t,ij} = \frac{\partial S^j_{t}}{\partial w_{ij}} + \frac{\partial S^j_{t}}{\partial S^j_{t-1}}\beta_{t-1,ij} \tag{11}\label{11}$$
 
+Finally,
+
+$$\frac{\partial E_{t}}{\partial v_{hk}} = \frac{\partial E_{t}}{\partial y^k_{t}}\frac{\partial y^k_{t}}{\partial v_{hk}} \tag{12}\label{12}$$
+
+$$\frac{\partial E_{t}}{\partial u_{dh}} = \frac{\partial E_{t}}{\partial S^h_{t}}\alpha_{t,dh} \tag{13}\label{13}$$
+
+$$\frac{\partial E_{t}}{\partial w_{ij}} = \frac{\partial E_{t}}{\partial S^j_{t}}\beta_{t,ij} \tag{14}\label{14}$$
+
+where $$k \in \{1,2,3....K\}$$, $$i,j,h \in \{1,2,3....H\}$$ and $$d \in \{1,2,3....D\}$$.
