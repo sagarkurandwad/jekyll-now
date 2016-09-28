@@ -58,6 +58,6 @@ $$\alpha_{dh} = \frac{\partial S^h_{0}}{\partial u_{dh}} \tag{3}\label{3}$$
 
 $$\beta_{ij} = \frac{\partial S^j_{0}}{\partial w_{ij}} \tag{4}\label{4}$$
 
-Where $k \in {1,2,3....K}$, $i,j,h \in {1,2,3....H}$ and $d \in {1,2,3....D}$.
+Where $k \in \\{1,2,3....K}$, $i,j,h \in {1,2,3....H}$ and $d \in {1,2,3....D}$.
 
 
