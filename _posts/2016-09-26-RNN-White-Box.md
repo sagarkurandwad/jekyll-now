@@ -42,7 +42,6 @@ Extending vanilla neural network architecture from Figure 1, Figure 2 shows a se
 ![equation](http://latex.codecogs.com/gif.latex?Concentration%3D%5Cfrac%7BTotalTemplate%7D%7BTotalVolume%7D)
 
 
-\\[ \frac{1}{n^{2}} \\]
-
+$$a^2 + b^2 = c^2$$
 
 
