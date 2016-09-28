@@ -50,10 +50,10 @@ $\frac{\partial E}{\partial v_{hk}}$, $\frac{\partial E}{\partial u_{ij}}$, $\fr
 
 Compute the following
 
-\begin{align}
-\frac{\partial E_{0}}{\partial y^k_{0}} \\
-\frac{\partial E_{0}}{\partial S^h_{0}} = \sum_{k=1}^K \frac{\partial E_{0}}{\partial y^k_{0}}\frac{\partial y^k_{0}}{\partial S^h_{0}} \\
-\end{align}
+\begin{equation}
+\frac{\partial E_{0}}{\partial y^k_{0}} 
+\frac{\partial E_{0}}{\partial S^h_{0}} = \sum_{k=1}^K \frac{\partial E_{0}}{\partial y^k_{0}}\frac{\partial y^k_{0}}{\partial S^h_{0}} 
+\end{equation}
 
 
 
