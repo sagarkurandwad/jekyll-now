@@ -7,7 +7,7 @@ use_math: true
 * Resources for learning RNN.  
 * Backpropagation Through Time in detail.
 
-LSTMs and GRUs \(varinats of vanilla RNNs\) have proven to be extremely effective in Computer Vision and Natural Language Processing applications. Of all the excellent resources on RNNs available online, following are the ones that helped me understand them clearly:
+LSTMs and GRUs (varinats of vanilla RNNs) have proven to be extremely effective in Computer Vision and Natural Language Processing applications. Of all the excellent resources on RNNs available online, following are the ones that helped me understand them clearly:
 
 1. [Understanding LSTM Networks:](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) Clear explanation with block diagrams.
 
@@ -21,7 +21,7 @@ LSTMs and GRUs \(varinats of vanilla RNNs\) have proven to be extremely effectiv
 
 ![](/images/VanillaNN.jpg  "Vanilla Neural Network")
 
-'Figure 1' shows a vanilla neural network architecture. 'D' dimensional input vector is conneted to the neural network unit through weights 'U'. The neural network unit is inturn conneted to the 'K' dimensional output vector through weights 'V'. The neural network unit consists of a single layer of 'H' neurons with 'tanh' activation. Gradinets for optimzation of this network can be computed using standard back propagation.
+'Figure 1' shows a vanilla neural network architecture. '$D$' dimensional input vector is conneted to the neural network unit through weights '$U$'. The neural network unit is inturn conneted to the '$K$' dimensional output vector through weights '$V$'. The neural network unit consists of a single layer of '$H$' neurons with '$tanh$' activation. Gradinets for optimzation of this network can be computed using standard back propagation.
 
 RNNs, on the other hand, allow mapping between variable length input sequnces to variable length output sequences. Thus, gradients need to be backpropagated in time to update weights. Depending on the type of application, RNN sequences can be broadly categorized ([Refer Andrej Karpathy's blog](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)) into:
 
