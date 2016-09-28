@@ -76,7 +76,7 @@ $$\frac{\partial E_{t}}{\partial y^k_{t}} \tag{8}\label{8}$$
 
 $$\frac{\partial E_{t}}{\partial S^h_{t}} = \sum_{k=1}^K \frac{\partial E_{t}}{\partial y^k_{t}}\frac{\partial y^k_{t}}{\partial S^h_{t}} \tag{9}\label{9}$$
 
-$$\alpha_{dh} := \frac{\partial S^h_{t}}{\partial u_{dh}} + \frac{\partial S^h_{t}}{\partial S^h_{t-1}}\alpha_{dh} \tag{9}\label{9}$$
+$$\alpha_{dh} = \frac{\partial S^h_{t}}{\partial u_{dh}} + \frac{\partial S^h_{t}}{\partial S^h_{t-1}}\alpha_{dh} \tag{10}\label{10}$$
 
 $$\beta_{ij} = \frac{\partial S^j_{0}}{\partial w_{ij}} \tag{4}\label{4}$$
 
