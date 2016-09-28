@@ -88,4 +88,5 @@ $$\frac{\partial E_{t}}{\partial u_{dh}} = \frac{\partial E_{t}}{\partial S^h_{t
 
 $$\frac{\partial E_{t}}{\partial w_{ij}} = \frac{\partial E_{t}}{\partial S^j_{t}}\beta_{t,ij} \tag{14}\label{14}$$
 
-where $$k \in \{1,2,3....K\}$$, $$i,j,h \in \{1,2,3....H\}$$ and $$d \in \{1,2,3....D\}$$.
+where $$k \in \{1,2,3....K\}$$, $$i,j,h \in \{1,2,3....H\}$$, $$d \in \{1,2,3....D\}$$, $$\alpha_{-1,dh} = 0$$,$$\beta_{-1,ij} = 0$$ and $$S_{-1} = [0 0 0 0 ... 0]_{Hx1}$$ 
+
