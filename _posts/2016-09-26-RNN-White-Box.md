@@ -44,12 +44,14 @@ The total loss for the above RNN is:
 $$E = \sum_{t=0}^T E_t$$
 
 where '$T$' is the length of input and output sequences. 
-\frac{\partial E}{\partial v_{hk}}, \frac{\partial E}{\partial u_{ij}}, \frac{\partial E}{\partial w_{dh}} are the target gradients that need to be computed.
+$\frac{\partial E}{\partial v_{hk}}$, $\frac{\partial E}{\partial u_{ij}}$, $\frac{\partial E}{\partial w_{dh}}$ are the target gradients that need to be computed.
 
 #### Consider '$E_{0}$' 
 
+Compute the following
+
 \begin{align}
-\frac{\partial E}{\partial v_{hk}}
+\frac{\partial E}{\partial y^k_{0}}
 \end{align}
 
 
