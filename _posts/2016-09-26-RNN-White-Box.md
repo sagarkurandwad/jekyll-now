@@ -50,11 +50,13 @@ $\frac{\partial E}{\partial v_{hk}}$, $\frac{\partial E}{\partial u_{ij}}$, $\fr
 
 Compute the following
 
-$$\frac{\partial E_{0}}{\partial y^k_{0}} \qquad \forall k \in \{1,2,3....K\} \tag{1}\label{1}$$
+$$\frac{\partial E_{0}}{\partial y^k_{0}} \tag{1}\label{1}$$
 
-$$\frac{\partial E_{0}}{\partial S^h_{0}} = \sum_{k=1}^K \frac{\partial E_{0}}{\partial y^k_{0}}\frac{\partial y^k_{0}}{\partial S^h_{0}} \qquad \forall h \in \{1,2,3....H\} \tag{2}\label{2}$$
+$$\frac{\partial E_{0}}{\partial S^h_{0}} = \sum_{k=1}^K \frac{\partial E_{0}}{\partial y^k_{0}}\frac{\partial y^k_{0}}{\partial S^h_{0}} \tag{2}\label{2}$$
 
-$$\alpha_{dh} = \frac{\partial S^h_{0}}{\partial u_{dh}}$$
+$$\alpha_{dh} = \frac{\partial S^h_{0}}{\partial u_{dh}} \tag{3}\label{3}$$
 
+$$\beta_{ij} = \frac{\partial S^j_{0}}{\partial w_{ij}} \tag{4}\label{4}$$
 
-
+$$\qquad \forall k \in \{1,2,3....K\}$$
+$$\qquad \forall h \in \{1,2,3....H\}$$
