@@ -37,14 +37,14 @@ RNNs, on the other hand, allow mapping between variable length input sequnces to
 
 ![](/images/RNNSyncIpOp.jpg  "RNN architecture for synchronized input and output sequences")
 
-Extending vanilla neural network architecture from $Figure 1$, $Figure 2$ shows a sequence of neural network units mapping the input sequences $X_{i}$s to output sequences $Y_{i}$s. Such architecture finds place in frame level video classification where the prediction depends on the current frame as well as the frames that appared before it. $S_{i}$s are the $H$ dimensional output of the hidden layer in the neural network units. These are the memory of the network which transfer previous state information along the chain. The neural network unit at $t+1$ takes input from $X_{i}$ throught $U$ and $S_{t}$ through $W$. Weights $U$, $V$ and $W$ are shared across RNN units. $S_{-1}$ is initialized to a vector of zeros.
+Extending vanilla neural network architecture from $Figure 1$, $Figure 2$ shows a sequence of neural network units mapping the input sequences $X_{i}$s to output sequences $Y_{i}$s. Such architecture finds place in frame level video classification where the prediction depends on the current frame as well as the frames that appared before it. $S_{i}$s are the $H$ dimensional output of the hidden layer in the neural network units. These are the memory of the network which transfer previous state information along the chain. The neural network unit at $t+1$ takes input from $X_{t}$ throught $U$ and $S_{t}$ through $W$. Weights $U$, $V$ and $W$ are shared across RNN units. $S_{-1}$ is initialized to a vector of zeros.
 
 The total loss for the above RNN is:
 
 $$E = \sum_{t=0}^T E_t$$
 
 where $T$ is the length of input and output sequences. 
-$\frac{\partial E}{\partial v_{hk}}$, $\frac{\partial E}{\partial u_{ij}}$, $\frac{\partial E}{\partial w_{dh}}$ are the target gradients that need to be computed.
+$\frac{\partial E}{\partial v_{hk}}$, $\frac{\partial E}{\partial u_{dh}}$, $\frac{\partial E}{\partial w_{ij}}$ are the target gradients that need to be computed.
 
 For RNN unit at $t$, compute the following:
 
