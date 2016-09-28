@@ -17,7 +17,7 @@ LSTMs and GRUs, variants of vanilla RNNs, have proven to be extremely effective 
 
 4. [Awesome Recurrent Neural Networks:](https://github.com/kjw0612/awesome-rnn) A curated list of RNN resources.
 
-## Backpropagation Through Time (BPTT)
+## Backpropagation Through Time \(BPTT\)
 
 ![](/images/VanillaNN.jpg  "Vanilla Neural Network")
 
