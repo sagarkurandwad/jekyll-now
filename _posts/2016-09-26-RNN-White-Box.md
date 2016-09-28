@@ -46,12 +46,13 @@ $$E = \sum_{t=0}^T E_t$$
 where '$T$' is the length of input and output sequences. 
 $\frac{\partial E}{\partial v_{hk}}$, $\frac{\partial E}{\partial u_{ij}}$, $\frac{\partial E}{\partial w_{dh}}$ are the target gradients that need to be computed.
 
-#### Consider '$E_{0}$' 
+#### Consider RNN unit at '$t = 0$' 
 
 Compute the following
 
 \begin{align}
-\frac{\partial E}{\partial y^k_{0}}
+\frac{\partial E_{0}}{\partial y^k_{0}}
+\frac{\partial E_{0}}{\partial S^h_{0}} = \sum_{k=1}^K \frac{\partial E_{0}}{\partial y^k_{0}}\frac{\partial y^k_{0}}{\partial S^h_{0}}
 \end{align}
 
 
