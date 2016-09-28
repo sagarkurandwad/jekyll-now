@@ -45,7 +45,7 @@ $$\sum_{t=0}^T E_t$$
 
 and the target gradients that need to be computed are:
 
-$$frac{\partial E/\partial v_{hk}}$$
+$$\frac{\partial E/\partial v_{hk}}$$
 
 
 
