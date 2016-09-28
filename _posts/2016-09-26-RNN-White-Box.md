@@ -58,8 +58,6 @@ $$\alpha_{dh} = \frac{\partial S^h_{0}}{\partial u_{dh}} \tag{3}\label{3}$$
 
 $$\beta_{ij} = \frac{\partial S^j_{0}}{\partial w_{ij}} \tag{4}\label{4}$$
 
-where $$k \in \{1,2,3....K\}$$, $$i,j,h \in \{1,2,3....H\}$$ and $$d \in \{1,2,3....D\}$$.
-
 Finally,
 
 $$\frac{\partial E_{0}}{\partial v_{hk}} = \frac{\partial E_{0}}{\partial y^k_{0}}\frac{\partial y^k_{0}}{\partial v_{hk}} \tag{5}\label{5}$$
@@ -67,3 +65,5 @@ $$\frac{\partial E_{0}}{\partial v_{hk}} = \frac{\partial E_{0}}{\partial y^k_{0
 $$\frac{\partial E_{0}}{\partial u_{dh}} = \frac{\partial E_{0}}{\partial S^h_{0}}\alpha_{dh} \tag{6}\label{6}$$
 
 $$\frac{\partial E_{0}}{\partial w_{ij}} = \frac{\partial E_{0}}{\partial S^j_{0}}\beta_{ij} \tag{7}\label{7}$$
+
+where $$k \in \{1,2,3....K\}$$, $$i,j,h \in \{1,2,3....H\}$$ and $$d \in \{1,2,3....D\}$$.
