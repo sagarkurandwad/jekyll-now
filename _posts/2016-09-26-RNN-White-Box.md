@@ -17,7 +17,7 @@ LSTMs and GRUs, variants of vanilla RNNs, have proven to be extremely effective 
 
 4. [Awesome Recurrent Neural Networks:](https://github.com/kjw0612/awesome-rnn) A curated list of RNN resources.
 
-## Backpropagation Through Time (BPTT)
+## Backpropagation Through Time
 
 ![](/images/VanillaNN.jpg  "Vanilla Neural Network")
 
@@ -41,11 +41,11 @@ Extending vanilla neural network architecture from '$Figure 1$', '$Figure 2$' sh
 
 The total loss for the above RNN is:
 
-$$\sum_{t=0}^T E_t$$
+$$E = \sum_{t=0}^T E_t$$
 
-and the target gradients that need to be computed are:
+and $\frac{\partial E}{\partial v_{hk}}$, $\frac{\partial E}{\partial u_{ij}}$, $\frac{\partial E}{\partial w_{dh}}$ are the target gradients that need to be computed.
 
-  $\frac{\partial E}{\partial v_{hk}}$, $\frac{\partial E}{\partial u_{ij}}$, $\frac{\partial E}{\partial w_{dh}}$
+  
 
 
 
