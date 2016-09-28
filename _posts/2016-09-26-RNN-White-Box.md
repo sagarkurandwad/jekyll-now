@@ -50,7 +50,7 @@ $\frac{\partial E}{\partial v_{hk}}$, $\frac{\partial E}{\partial u_{ij}}$, $\fr
 
 Compute the following
 
-$$\frac{\partial E_{0}}{\partial y^k_{0}} \quad \forall k \in {1,2,3..K} \tag{1}\label{1}$$
+$$\frac{\partial E_{0}}{\partial y^k_{0}} \qquad \qquad \forall k \in \{1,2,3..K\} \tag{1}\label{1}$$
 
 $$\frac{\partial E_{0}}{\partial S^h_{0}} = \sum_{k=1}^K \frac{\partial E_{0}}{\partial y^k_{0}}\frac{\partial y^k_{0}}{\partial S^h_{0}}\tag{2}\label{2}$$
 
