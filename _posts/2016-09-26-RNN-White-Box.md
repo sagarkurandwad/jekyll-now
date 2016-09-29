@@ -77,6 +77,8 @@ $$\alpha_{t,dh}, \;\beta_{t,ij}$$ and $$\frac{\partial s^h_{t}}{\partial s^h_{t-
 
 ![](/images/RNNUnSyncIpOpMessage.jpg  "RNN architecture for unsynchronized input and output sequences")
 
-RNNs are pretty successful in machine translaion applications. The architecture in $Figure\;3$ shows an encoder RNN connected to a decoder RNN through the encoder's hidden state $S^e_{Te}$, where $Te$ is length of the input sequence to the encoder. The RNN decoder unit at $t+1$ takes $S^e_{Te}$, $Y_{t}$ and $S^d_{t}$ as inputs. In this architecture, a varible length input sequence can be mapped to a variable length output sequence. Generally, encoders and decoders use different sets of parameters as shown.
+RNNs are pretty successful in machine translaion applications. The architecture in $Figure\;3$ shows an encoder RNN connected to a decoder RNN through the encoder's hidden state $S^e_{Te}$, where $Te$ is length of the input sequence to the encoder. The RNN decoder unit at $t+1$ takes $S^e_{Te}$, $Y_{t}$ and $S^d_{t}$ as inputs. In this architecture, a varible length input sequence can be mapped to a variable length output sequence. Generally, encoders and decoders use different sets of parameters as shown. 
+
+The neural network units in encoders and decoders are single hidden layer with $H$ neurons.
 
 The total loss is given by equation $\ref{1}$ and the target gradients that need to be computed are $\frac{\partial E}{\partial v^d_{hk}}$, $\frac{\partial E}{\partial u_{dh}}$, $\frac{\partial E}{\partial w_{ij}}$
