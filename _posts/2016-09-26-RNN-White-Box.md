@@ -41,28 +41,28 @@ Extending vanilla neural network architecture from $Figure\;1$, $Figure\;2$ show
 
 The total loss for the above RNN is:
 
-$$E = \sum_{t=0}^T E_t$$
+$$E = \sum_{t=0}^T E_t \tag{1}\label{1}$$
 
 where $T$ is the length of input and output sequences. 
 $\frac{\partial E}{\partial v_{hk}}$, $\frac{\partial E}{\partial u_{dh}}$, $\frac{\partial E}{\partial w_{ij}}$ are the target gradients that need to be computed.
 
 For RNN unit at $t$, compute the following:
 
-$$\frac{\partial E_{t}}{\partial y^k_{t}} \tag{1}\label{1}$$
+$$\frac{\partial E_{t}}{\partial y^k_{t}} \tag{2}\label{2}$$
 
-$$\frac{\partial E_{t}}{\partial s^h_{t}} = \sum_{k=1}^K \frac{\partial E_{t}}{\partial y^k_{t}}\frac{\partial y^k_{t}}{\partial s^h_{t}} \tag{2}\label{2}$$
+$$\frac{\partial E_{t}}{\partial s^h_{t}} = \sum_{k=1}^K \frac{\partial E_{t}}{\partial y^k_{t}}\frac{\partial y^k_{t}}{\partial s^h_{t}} \tag{3}\label{3}$$
 
-$$\alpha_{t,dh} = \frac{\partial s^h_{t}}{\partial u_{dh}} + \frac{\partial s^h_{t}}{\partial s^h_{t-1}}\alpha_{t-1,dh} \tag{3}\label{3}$$
+$$\alpha_{t,dh} = \frac{\partial s^h_{t}}{\partial u_{dh}} + \frac{\partial s^h_{t}}{\partial s^h_{t-1}}\alpha_{t-1,dh} \tag{4}\label{4}$$
 
-$$\beta_{t,ij} = \frac{\partial s^j_{t}}{\partial w_{ij}} + \frac{\partial s^j_{t}}{\partial s^j_{t-1}}\beta_{t-1,ij} \tag{4}\label{4}$$
+$$\beta_{t,ij} = \frac{\partial s^j_{t}}{\partial w_{ij}} + \frac{\partial s^j_{t}}{\partial s^j_{t-1}}\beta_{t-1,ij} \tag{5}\label{5}$$
 
 Finally,
 
-$$\frac{\partial E_{t}}{\partial v_{hk}} = \frac{\partial E_{t}}{\partial y^k_{t}}\frac{\partial y^k_{t}}{\partial v_{hk}} \tag{5}\label{5}$$
+$$\frac{\partial E_{t}}{\partial v_{hk}} = \frac{\partial E_{t}}{\partial y^k_{t}}\frac{\partial y^k_{t}}{\partial v_{hk}} \tag{6}\label{6}$$
 
-$$\frac{\partial E_{t}}{\partial u_{dh}} = \frac{\partial E_{t}}{\partial s^h_{t}}\alpha_{t,dh} \tag{6}\label{6}$$
+$$\frac{\partial E_{t}}{\partial u_{dh}} = \frac{\partial E_{t}}{\partial s^h_{t}}\alpha_{t,dh} \tag{7}\label{7}$$
 
-$$\frac{\partial E_{t}}{\partial w_{ij}} = \frac{\partial E_{t}}{\partial s^j_{t}}\beta_{t,ij} \tag{7}\label{7}$$
+$$\frac{\partial E_{t}}{\partial w_{ij}} = \frac{\partial E_{t}}{\partial s^j_{t}}\beta_{t,ij} \tag{8}\label{8}$$
 
 where,
 
@@ -77,4 +77,6 @@ $$\alpha_{t,dh}, \;\beta_{t,ij}$$ and $$\frac{\partial s^h_{t}}{\partial s^h_{t-
 
 ![](/images/RNNUnSyncIpOpMessage.jpg  "RNN architecture for unsynchronized input and output sequences")
 
-RNNs are pretty successful in machine translaion aplications. The architecture in $Figure\;3$ shows two different  
+RNNs are pretty successful in machine translaion applications. The architecture in $Figure\;3$ shows an encoder RNN connected to a decoder RNN through the encoder's hidden state $S^e_{Te}$, where $Te$ is length of the input sequence to the encoder. The RNN decoder unit at $t+1$ takes $S^e_{Te}$, $Y_{t}$ and $S^d_{t}$ as inputs. In this architecture, a varible length input sequence can be mapped to a variable length output sequence. Generally, encoders and decoders use different sets of parameters as shown.
+
+The total loss is given by equation $\ref{1}$ and the target gradients that need to be computed are $\frac{\partial E}{\partial v^d_{hk}}$, $\frac{\partial E}{\partial u_{dh}}$, $\frac{\partial E}{\partial w_{ij}}$
