@@ -70,5 +70,9 @@ $$k \in \{1,2,3....K\}; \;i,j,h \in \{1,2,3....H\}; \;d \in \{1,2,3....D\}$$
 
 $$\alpha_{-1,dh} = 0; \;\beta_{-1,ij} = 0; \;s^h_{-1} = 0$$
 
-$$\alpha_{t,dh}, \;\beta_{t,ij}$$ and $$\frac{\partial s^h_{t}}{\partial s^h_{t-1}}$$ are messages that are passed along the RNN network as shown in $Figure\;2$.
+$$\alpha_{t,dh}, \;\beta_{t,ij}$$ and $$\frac{\partial s^h_{t}}{\partial s^h_{t-1}}$$ are messages that are passed along the RNN as shown in $Figure\;2$.
+
+
+### Unsynchronised input and output sequences
+
 
