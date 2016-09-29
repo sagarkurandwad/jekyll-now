@@ -75,4 +75,4 @@ $$\alpha_{t,dh}, \;\beta_{t,ij}$$ and $$\frac{\partial s^h_{t}}{\partial s^h_{t-
 
 ### Unsynchronised input and output sequences
 
-
+![](/images/RNNUnSyncIpOpMessage.jpg  "RNN architecture for unsynchronized input and output sequences")
