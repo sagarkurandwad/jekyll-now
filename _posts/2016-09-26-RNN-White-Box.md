@@ -21,7 +21,7 @@ LSTMs and GRUs, variants of vanilla RNNs, have proven to be extremely effective 
 
 ![](/images/VanillaNN.jpg  "Vanilla Neural Network")
 
-$Figure 1$ shows a vanilla neural network architecture. $D$ dimensional input vector is conneted to the neural network unit through weights $U$. The neural network unit is inturn conneted to the $K$ dimensional output vector through weights $V$. The neural network unit consists of a single layer of $H$ neurons with $tanh$ activation. Gradinets for optimzation of this network can be computed using standard back propagation.
+$Figure\;1$ shows a vanilla neural network architecture. $D$ dimensional input vector is conneted to the neural network unit through weights $U$. The neural network unit is inturn conneted to the $K$ dimensional output vector through weights $V$. The neural network unit consists of a single layer of $H$ neurons with $tanh$ activation. Gradinets for optimzation of this network can be computed using standard back propagation.
 
 RNNs, on the other hand, allow mapping between variable length input sequnces to variable length output sequences. Thus, gradients need to be backpropagated in time to update weights. Depending on the type of application, RNN sequences can be broadly categorized ([Refer Andrej Karpathy's blog](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)) into:
 
@@ -37,7 +37,7 @@ RNNs, on the other hand, allow mapping between variable length input sequnces to
 
 ![](/images/RNNSyncIpOpMessage.jpg  "RNN architecture for synchronized input and output sequences")
 
-Extending vanilla neural network architecture from $Figure 1$, $Figure 2$ shows a sequence of neural network units mapping the input sequences $X_{i}$s to output sequences $Y_{i}$s. Such architecture finds place in frame level video classification where the prediction depends on the current frame as well as the frames that appared before it. $S_{i}$s are the $H$ dimensional output of the hidden layer in the neural network units. These are the memory of the network which transfer previous state information along the chain. The neural network unit at $t+1$ takes input from $X_{t}$ throught $U$ and $S_{t}$ through $W$. Weights $U$, $V$ and $W$ are shared across RNN units. $S_{-1}$ is initialized to a vector of zeros.
+Extending vanilla neural network architecture from $Figure\;1$, $Figure\;2$ shows a sequence of neural network units mapping the input sequences $X_{i}$s to output sequences $Y_{i}$s. Such architecture finds place in frame level video classification where the prediction depends on the current frame as well as the frames that appared before it. $S_{i}$s are the $H$ dimensional output of the hidden layer in the neural network units. These are the memory of the network which transfer previous state information along the chain. The neural network unit at $t+1$ takes input from $X_{t}$ throught $U$ and $S_{t}$ through $W$. Weights $U$, $V$ and $W$ are shared across RNN units. $S_{-1}$ is initialized to a vector of zeros.
 
 The total loss for the above RNN is:
 
@@ -70,5 +70,5 @@ $$k \in \{1,2,3....K\}; \;i,j,h \in \{1,2,3....H\}; \;d \in \{1,2,3....D\}$$
 
 $$\alpha_{-1,dh} = 0; \;\beta_{-1,ij} = 0; \;s^h_{-1} = 0$$
 
-$$\alpha_{t,dh}, \;\beta_{t,ij}$$ and $$\frac{\partial s^h_{t}}{\partial s^h_{t-1}}$$ are messages that are passed along the RNN network as shown in $Figure 2$.
+$$\alpha_{t,dh}, \;\beta_{t,ij}$$ and $$\frac{\partial s^h_{t}}{\partial s^h_{t-1}}$$ are messages that are passed along the RNN network as shown in $Figure\;2$.
 
