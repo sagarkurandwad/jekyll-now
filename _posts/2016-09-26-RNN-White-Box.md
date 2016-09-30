@@ -98,7 +98,7 @@ $$\alpha^d_{t,kh} = \frac{\partial s^{d,h}_{t}}{\partial u^d_{kh}} + \frac{\part
 
 $$\beta^d_{t,ij} = \frac{\partial s^{d,j}_{t}}{\partial w^d_{ij}} + \frac{\partial s^{d,j}_{t}}{\partial s^{d,j}_{t-1}}\beta^d_{t-1,ij} \tag{14}\label{14}$$
 
-$$\gamma^d_{t,ij} = \frac{\partial s^{d,j}_{t}}{\partial w^e_{ij}} + \frac{\partial s^{d,j}_{t}}{\partial s^{d,j}_{t-1}}\gamma^d_{t-1,ij} \tag{15}\label{15}$$
+$$\gamma^d_{t,ij} = \frac{\partial s^{d,j}_{t}}{\partial w^e_{ij}} + \frac{\partial s^{d,j}_{t}}{\partyial s^{e,j}_{T_e}}\beta^e_{T_e,ij} + \frac{\partial s^{d,j}_{t}}{\partial s^{d,j}_{t-1}}\gamma^d_{t-1,ij} \tag{15}\label{15}$$
 
 $$\zeta^d_{t,lh} = \frac{\partial s^{d,h}_{t}}{\partial s^{d,h}_{t-1}} [ \frac{\partial s^{d,h}_{t-1}}{\partial s^{e,h}_{T_e}}\alpha^e_{T_e,lh} + \zeta^d_{t-1,lh} ] \tag{16}\label{16}$$
 
@@ -120,9 +120,8 @@ $$k \in \{1,2,3....K\}; \;i,j,h \in \{1,2,3....H\}; \;l \in \{1,2,3....D\}$$
 
 $$\alpha^e_{-1,lh} = 0; \;\beta^e_{-1,ij} = 0; \;s^{e,h}_{-1} = 0$$
 
-$$\alpha^d_{-1,kh} = 0; \;\beta^d_{-1,ij} = 0; \;\zeta^d_{-1,lh} = 0; \;s^{d,h}_{-1} = 0$$
+$$\alpha^d_{-1,kh} = 0; \;\beta^d_{-1,ij} = 0; \;\gamma^d_{t,ij} = 0, \;\zeta^d_{-1,lh} = 0; \;s^{d,h}_{-1} = 0$$
 
-$$\gamma^d_{
 
 $$\alpha_{t,dh}, \;\beta_{t,ij}$$ and $$\frac{\partial s^h_{t}}{\partial s^h_{t-1}}$$ are messages that are passed along the RNN as shown in $Figure\;2$.
 
