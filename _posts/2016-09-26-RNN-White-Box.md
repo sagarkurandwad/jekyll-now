@@ -129,4 +129,3 @@ $$\alpha^e_{t,lh}$$ and $$\beta^e_{t,ij}$$ are messages passed acoss the encoder
 
 
 
-
