@@ -88,6 +88,7 @@ $$\alpha^e_{t,lh} = \frac{\partial s^{e,h}_{t}}{\partial u^e_{lh}} + \frac{\part
 $$\beta^e_{t,ij} = \frac{\partial s^{e,j}_{t}}{\partial w^e_{ij}} + \frac{\partial s^{e,j}_{t}}{\partial s^{e,j}_{t-1}}\beta^e_{t-1,ij} \tag{10}\label{10}$$
 
 
+For decoder compute:
 
 
 
