@@ -1,10 +1,10 @@
 ---
 layout: post
 title: RNN White Box
-date: "2016-09-26"
 use_math: true
 comments: true
 ---
+September 26, 2016
 
 * Resources for learning RNN.  
 * Backpropagation Through Time in detail.
