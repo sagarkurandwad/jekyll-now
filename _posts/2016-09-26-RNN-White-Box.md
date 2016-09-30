@@ -2,7 +2,7 @@
 layout: post
 title: RNN White Box
 use_math: true
-comment: true
+comments: true
 ---
 
 * Resources for learning RNN.  
