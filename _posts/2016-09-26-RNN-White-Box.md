@@ -89,4 +89,3 @@ $$\beta^e_{t,ij} = \frac{\partial s^{e,j}_{t}}{\partial w^e_{ij}} + \frac{\parti
 
 
 
-
