@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Sagar Kurandwad
+title: About
 permalink: /about/
 ---
 
