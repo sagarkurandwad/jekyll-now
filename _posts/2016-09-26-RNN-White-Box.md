@@ -114,6 +114,15 @@ $$\frac{\partial E_{t}}{\partial u^e_{lh}} = \frac{\partial E_{t}}{\partial s^{e
 
 $$\frac{\partial E_{t}}{\partial w^e_{ij}} = \frac{\partial E_{t}}{\partial s^{d,j}_{t}}\gamma^d_{t,ij} \tag{21}\label{21}$$
 
-Where,
+where,
 
+$$k \in \{1,2,3....K\}; \;i,j,h \in \{1,2,3....H\}; \;l \in \{1,2,3....D\}$$ 
+
+$$\alpha^e_{-1,lh} = 0; \;\beta^e_{-1,ij} = 0; \;s^{e,h}_{-1} = 0$$
+
+$$\alpha^d_{-1,kh} = 0; \;\beta^d_{-1,ij} = 0; \;\zeta^d_{-1,lh} = 0; \;s^{d,h}_{-1} = 0$$
+
+$$\gamma^d_{
+
+$$\alpha_{t,dh}, \;\beta_{t,ij}$$ and $$\frac{\partial s^h_{t}}{\partial s^h_{t-1}}$$ are messages that are passed along the RNN as shown in $Figure\;2$.
 
