@@ -34,11 +34,11 @@ RNNs, on the other hand, allow mapping between variable length input sequences t
 
 4. Output sequences
 
-### Synchronised input and output sequences
+### Synchronized input and output sequences
 
 ![](/images/RNNSyncIpOpMessage.jpg  "RNN architecture for synchronized input and output sequences")
 
-Extending vanilla neural network architecture from $Figure\;1$, $Figure\;2$ shows a sequence of neural network units mapping the input sequences $X_{i}$s to output sequences $Y_{i}$s. Such architecture finds place in frame level video classification where the prediction depends on the current frame as well as the frames that appared before it. $S_{i}$s are the $H$ dimensional output of the hidden layer in the neural network units. These are the memory of the network which transfer previous state information along the chain. The neural network unit at $t+1$ takes input from $X_{t}$ throught $U$ and $S_{t}$ through $W$. Weights $U$, $V$ and $W$ are shared across RNN units. $S_{-1}$ is initialized to a vector of zeros.
+Extending vanilla neural network architecture from $Figure\;1$, $Figure\;2$ shows a sequence of neural network units mapping the input sequences $X_{i}$s to output sequences $Y_{i}$s. Such architecture finds place in frame level video classification where the prediction depends on the current frame as well as the frames that appeared before it. $S_{i}$s are the $H$ dimensional output of the hidden layer in the neural network units. These are the memory of the network which transfer previous state information along the chain. The neural network unit at $t+1$ takes input from $X_{t}$ throught $U$ and $S_{t}$ through $W$. Weights $U$, $V$ and $W$ are shared across RNN units. $S_{-1}$ is initialized to a vector of zeros.
 
 The total loss for the above RNN is:
 
@@ -71,13 +71,13 @@ $$k \in \{1,2,3....K\}; \;i,j,h \in \{1,2,3....H\}; \;d \in \{1,2,3....D\}$$
 
 $$\alpha_{-1,dh} = 0; \;\beta_{-1,ij} = 0; \;s^h_{-1} = 0$$
 
-$$\alpha_{t,dh}, \;\beta_{t,ij}$$ and $$\frac{\partial s^h_{t}}{\partial s^h_{t-1}}$$ are messages that are passed along the RNN as shown in $Figure\;2$.
+$$\alpha_{t,dh}, \;\beta_{t,ij}$$ and $$\frac{\partial s^h_{t}}{\partial s^h_{t-1}}$$ are messages passed along the RNN as shown in $Figure\;2$.
 
-### Unsynchronised input and output sequences
+### Unsynchronized input and output sequences
 
 ![](/images/RNNUnSyncIpOpMessage.jpg  "RNN architecture for unsynchronized input and output sequences")
 
-RNNs are pretty successful in machine translaion applications. The architecture in $Figure\;3$ shows an encoder RNN connected to a decoder RNN through the encoder's hidden state $S^e_{Te}$, where $Te$ is length of the input sequence to the encoder. The RNN decoder unit at $t+1$ takes $S^e_{Te}$, $Y_{t}$ and $S^d_{t}$ as inputs. In this architecture, a varible length input sequence can be mapped to a variable length output sequence. Generally, encoders and decoders use different sets of parameters as shown. Each neural network unit in the encoder and the decoder consist of a single hidden layer of $H$ neurons.
+RNNs are pretty successful in machine translation applications. The architecture in $Figure\;3$ shows an encoder RNN connected to a decoder RNN through the encoder's hidden state $S^e_{Te}$, where $Te$ is length of the input sequence to the encoder. The RNN decoder unit at $t+1$ takes $S^e_{Te}$, $Y_{t}$ and $S^d_{t}$ as inputs. In this architecture, a variable length input sequence can be mapped to a variable length output sequence. Generally, encoders and decoders use different sets of parameters as shown. Each neural network unit in the encoder and the decoder consist of a single hidden layer of $H$ neurons.
 
 The total loss is given by equation $(\ref{1})$ and the target gradients that need to be computed are $\frac{\partial E}{\partial v^d_{hk}}$, $\frac{\partial E}{\partial u^d_{kh}}$, $\frac{\partial E}{\partial w^d_{ij}}$, $\frac{\partial E}{\partial u^e_{lh}}$ and $\frac{\partial E}{\partial w^e_{ij}}$, where parameters are superscripted with $e$ and $d$ representing encoders and decoders respectively.
 
@@ -123,7 +123,7 @@ $$\alpha^e_{-1,lh} = 0; \;\beta^e_{-1,ij} = 0; \;s^{e,h}_{-1} = 0$$
 $$\alpha^d_{-1,kh} = 0; \;\beta^d_{-1,ij} = 0; \;\gamma^d_{-1,ij} = 0, \;\zeta^d_{-1,lh} = 0; \;s^{d,h}_{-1} = 0$$
 
 
-$$\alpha^e_{t,lh}$$ and $$\beta^e_{t,ij}$$ are messages passed acoss the encoder. These are then accumulated and passed across the decoder through $$\zeta^d_{t,lh}$$ and $$\gamma^d_{t,ij}$$. Information in the form of $$\alpha^d_{t,kh}$$ and $$\beta^d_{t,ij}$$ also flow through the decoder for gradinet computation.
+$$\alpha^e_{t,lh}$$ and $$\beta^e_{t,ij}$$ are messages passed across the encoder. These are then accumulated and passed across the decoder through $$\zeta^d_{t,lh}$$ and $$\gamma^d_{t,ij}$$. Information in the form of $$\alpha^d_{t,kh}$$ and $$\beta^d_{t,ij}$$ also flow through the decoder for gradient computation.
 
 ### Input sequences
 
@@ -155,7 +155,7 @@ $$\alpha_{-1,dh} = 0; \;\beta_{-1,ij} = 0; \;s^h_{-1} = 0$$
 
 ![](/images/RNNOpSequence.jpg  "RNN architecture for sequence of outputs")
 
-Image captioning takes an image and outputs a sequence of words, RNN architecture for the same is shown in $Figure\;5$. Refer equations  $(\ref{2})$,  $(\ref{3})$,  $(\ref{5})$ for $\frac{\partial E_{t}}{\partial y^k_{t}}$, $\frac{\partial E_{t}}{\partial s^h_{t}}$ and $\beta_{t,ij}$ respectively. Target gradients $\frac{\partial E}{\partial v_{hk}}$, $\frac{\partial E}{\partial u_{dh}}$, $\frac{\partial E}{\partial w_{ij}}$ can be computed using $(\ref{6})$,  $(\ref{7})$ and $(\ref{8})$. $\alpha_{t,dh}$, on the other hand, is computed as below:
+Image captioning takes an image and outputs a sequence of words, RNN architecture for the same is shown in $Figure\;5$. Refer equations  $(\ref{2})$,  $(\ref{3})$,  $(\ref{5})$ for $\frac{\partial E_{t}}{\partial y^k_{t}}$, $\frac{\partial E_{t}}{\partial s^h_{t}}$ and $\beta_{t,ij}$ respectively. Target gradients $\frac{\partial E}{\partial v_{hk}}$, $\frac{\partial E}{\partial u_{dh}}$, $\frac{\partial E}{\partial w_{ij}}$ can be computed using $(\ref{6})$,  $(\ref{7})$ and $(\ref{8})$. $\alpha_{t,dh}$, however, is computed as below:
 
 $$\alpha_{t,dh} = \frac{\partial s^h_{t}}{\partial s^h_{t-1}}\alpha_{t-1,dh} \tag{27}\label{27}$$
 
