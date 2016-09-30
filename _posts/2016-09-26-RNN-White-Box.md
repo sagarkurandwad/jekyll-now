@@ -83,7 +83,9 @@ The total loss is given by equation $(\ref{1})$ and the target gradients that ne
 
 For encoder compute:
 
-$$\beta^e_{t,ij} = \frac{\partial s^{e,j}_{t}}{\partial w^e_{ij}} + \frac{\partial s^{e,j}_{t}}{\partial s^{e,j}_{t-1}}\beta^e_{t-1,ij} \tag{9}\label{9}$$
+$$\alpha^e_{t,lh} = \frac{\partial s^{e,h}_{t}}{\partial u^e_{lh}} + \frac{\partial s^{e,h}_{t}}{\partial s^{e,h}_{t-1}}\alpha^e_{t-1,lh} \tag{9}\label{9}$$
+
+$$\beta^e_{t,ij} = \frac{\partial s^{e,j}_{t}}{\partial w^e_{ij}} + \frac{\partial s^{e,j}_{t}}{\partial s^{e,j}_{t-1}}\beta^e_{t-1,ij} \tag{10}\label{10}$$
 
 
 
