@@ -14,4 +14,6 @@ layout: default
   </div>
 
 </article>
-{% include disqus.html %}
+{% if page.comments != false %}
+  {% include disqus_comments.html %}
+{% endif %}
