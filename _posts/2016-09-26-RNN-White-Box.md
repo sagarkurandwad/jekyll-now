@@ -104,5 +104,3 @@ $$\zeta^d_{t,lh} = \frac{\partial s^{d,h}_{t}}{\partial s^{d,h}_{t-1}} \[ \frac{
 
 Where,
  
-
-
