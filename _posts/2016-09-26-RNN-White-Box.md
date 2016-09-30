@@ -173,4 +173,3 @@ We have seen how the chain rule of calculus can be used to compute gradients in 
 
 
 
-
