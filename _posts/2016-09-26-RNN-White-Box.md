@@ -102,5 +102,17 @@ $$\gamma^d_{t,ij} = \frac{\partial s^{d,j}_{t}}{\partial w^e_{ij}} + \frac{\part
 
 $$\zeta^d_{t,lh} = \frac{\partial s^{d,h}_{t}}{\partial s^{d,h}_{t-1}} [ \frac{\partial s^{d,h}_{t-1}}{\partial s^{e,h}_{T_e}}\alpha^e_{T_e,lh} + \zeta^d_{t-1,lh} ] \tag{16}\label{16}$$
 
+Hence,
+
+$$\frac{\partial E_{t}}{\partial v^d_{hk}} = \frac{\partial E_{t}}{\partial y^k_{t}}\frac{\partial y^k_{t}}{\partial v^d_{hk}} \tag{17}\label{17}$$
+
+$$\frac{\partial E_{t}}{\partial u^d_{kh}} = \frac{\partial E_{t}}{\partial s^{d,h}_{t}}\alpha^d_{t,kh} \tag{18}\label{18}$$
+
+$$\frac{\partial E_{t}}{\partial w^d_{ij}} = \frac{\partial E_{t}}{\partial s^{d,j}_{t}}\beta^d_{t,ij} \tag{19}\label{19}$$
+
+$$\frac{\partial E_{t}}{\partial u^e_{lh}} = \frac{\partial E_{t}}{\partial s^{e,h}_{T_e}}\alpha^e_{T_e,lh} + \frac{\partial E_{t}}{\partial s^{d,h}_{t}}$$\zeta^d_{t-1,lh} \tag{20}\label{20}$$
+
+$$\frac{\partial E_{t}}{\partial w^e_{ij}} = \frac{\partial E_{t}}{\partial s^{d,j}_{t}}\gamma^d_{t,ij} \tag{21}\label{21}$$
+
 Where,
 
