@@ -154,9 +154,9 @@ $$\alpha_{-1,dh} = 0; \;\beta_{-1,ij} = 0; \;s^h_{-1} = 0$$
 
 ![](/images/RNNOpSequence.jpg  "RNN architecture for sequence of outputs")
 
-Image captioning takes an image and outputs a sequence of words \\(RNN architecture in $Figure\;5$\\). Refer equations  $(\ref{2})$,  $(\ref{3})$,  $(\ref{5})$ for $\frac{\partial E_{t}}{\partial y^k_{t}}$, $\frac{\partial E_{t}}{\partial s^h_{t}}$ and $\beta_{t,ij}$ respectively. Target gradients $\frac{\partial E}{\partial v_{hk}}$, $\frac{\partial E}{\partial u_{dh}}$, $\frac{\partial E}{\partial w_{ij}}$ can be computed using $(\ref{6})$,  $(\ref{7})$ and $(\ref{8})$. $\alpha_{t,dh}$, on the other hand, is computed as below:
+Image captioning takes an image and outputs a sequence of words, RNN architecture for the same is shown in $Figure\;5$. Refer equations  $(\ref{2})$,  $(\ref{3})$,  $(\ref{5})$ for $\frac{\partial E_{t}}{\partial y^k_{t}}$, $\frac{\partial E_{t}}{\partial s^h_{t}}$ and $\beta_{t,ij}$ respectively. Target gradients $\frac{\partial E}{\partial v_{hk}}$, $\frac{\partial E}{\partial u_{dh}}$, $\frac{\partial E}{\partial w_{ij}}$ can be computed using $(\ref{6})$,  $(\ref{7})$ and $(\ref{8})$. $\alpha_{t,dh}$, on the other hand, is computed as below:
 
-$$\alpha_{t,dh} = \frac{\partial s^h_{t}}{\partial s^h_{t-1}}\alpha_{t-1,dh}$$
+$$\alpha_{t,dh} = \frac{\partial s^h_{t}}{\partial s^h_{t-1}}\alpha_{t-1,dh} \tag{27}\label{27}$$
 
 where,
 
@@ -165,6 +165,11 @@ $$\alpha_{0,dh} = \frac{\partial s^h_{0}}{\partial u_{dh}}$$
 $$k \in \{1,2,3....K\}; \;i,j,h \in \{1,2,3....H\}; \;d \in \{1,2,3....D\}$$ 
 
 $$\alpha_{-1,dh} = 0; \;\beta_{-1,ij} = 0; \;s^h_{-1} = 0$$
+
+## Conclusion
+
+We have seen how the chain rule of calculus can be used to compute gradients in RNNs of various architectures. The process can be viewed as passing messages across the RNN. Actual implementation of the gradients could be difficult and hence one could opt to compute them numerically. SGD, Adam, AdaGrad and other optimizers can be used to update weights. Gradient computation for LSTMs, GRUs and their variants requires a similar approach.
+
 
 
 
