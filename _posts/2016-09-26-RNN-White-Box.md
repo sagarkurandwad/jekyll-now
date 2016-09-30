@@ -161,4 +161,3 @@ Image captioning takes an image and outputs a sequence of words (RNN architectur
 
 
 
-
