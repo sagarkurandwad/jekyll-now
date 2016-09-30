@@ -126,5 +126,7 @@ $$\alpha^e_{t,lh}$$ and $$\beta^e_{t,ij}$$ are messages passed acoss the encoder
 
 ### Input sequences
 
+In sentiment analysis, a sequence of words is classified into positive or negative sentiments. $Figure\;4$ shows the architecture for such applications.
 
+![](/images/RNNUnSyncIpOpMessage.jpg  "RNN architecture for unsynchronized input and output sequences")
 
