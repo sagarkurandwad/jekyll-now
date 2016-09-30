@@ -72,7 +72,6 @@ $$\alpha_{-1,dh} = 0; \;\beta_{-1,ij} = 0; \;s^h_{-1} = 0$$
 
 $$\alpha_{t,dh}, \;\beta_{t,ij}$$ and $$\frac{\partial s^h_{t}}{\partial s^h_{t-1}}$$ are messages that are passed along the RNN as shown in $Figure\;2$.
 
-
 ### Unsynchronised input and output sequences
 
 ![](/images/RNNUnSyncIpOpMessage.jpg  "RNN architecture for unsynchronized input and output sequences")
@@ -123,9 +122,9 @@ $$\alpha^e_{-1,lh} = 0; \;\beta^e_{-1,ij} = 0; \;s^{e,h}_{-1} = 0$$
 $$\alpha^d_{-1,kh} = 0; \;\beta^d_{-1,ij} = 0; \;\gamma^d_{-1,ij} = 0, \;\zeta^d_{-1,lh} = 0; \;s^{d,h}_{-1} = 0$$
 
 
-$$\alpha^e_{t,lh}$$ and $$\beta^e_{t,ij}$$ are messages passed acoss the encoder. These are then accumulated and passed across the decoder through $$\zeta^d_{t,lh}$$ and $$\gamma^d_{t,ij}$$. $$\alpha^d_{t,kh}$$ and $$\beta^d_{t,ij}$$ pass also information across the decoder for gradinet computation.
+$$\alpha^e_{t,lh}$$ and $$\beta^e_{t,ij}$$ are messages passed acoss the encoder. These are then accumulated and passed across the decoder through $$\zeta^d_{t,lh}$$ and $$\gamma^d_{t,ij}$$. Information in the form of $$\alpha^d_{t,kh}$$ and $$\beta^d_{t,ij}$$ also flow through the decoder for gradinet computation.
 
-
+### Input sequences
 
 
 
