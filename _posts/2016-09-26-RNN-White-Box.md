@@ -145,3 +145,4 @@ $$\frac{\partial E}{\partial u_{dh}} = \frac{\partial E}{\partial s^h_{T}}\alpha
 $$\frac{\partial E}{\partial w_{ij}} = \frac{\partial E}{\partial s^j_{T}}\beta_{T,ij} \tag{26}\label{26}$$
 
 where $$\alpha_{t,dh}$$ and $$\beta_{t,ij}$$ are given by equations $(\ref{4})$ and $(\ref{5})$ respectively.
+
