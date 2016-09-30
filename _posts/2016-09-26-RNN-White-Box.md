@@ -81,6 +81,12 @@ RNNs are pretty successful in machine translaion applications. The architecture 
 
 The total loss is given by equation $(\ref{1})$ and the target gradients that need to be computed are $\frac{\partial E}{\partial v^d_{hk}}$, $\frac{\partial E}{\partial u^d_{kh}}$, $\frac{\partial E}{\partial w^d_{ij}}$, $\frac{\partial E}{\partial u^e_{lh}}$ and $\frac{\partial E}{\partial w^e_{ij}}$, where parameters are superscripted with $e$ and $d$ representing encoders and decoders respectively.
 
+For encoder compute:
+
+$$\beta^e_{t,ij} = \frac{\partial s^{e,j}_{t}}{\partial w^e_{ij}} + \frac{\partial s^{e,j}_{t}}{\partial s^{e,j}_{t-1}}\beta^e_{t-1,ij} \tag{9}\label{9}$$
+
+
+
 
 
 
