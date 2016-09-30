@@ -116,3 +116,4 @@ $$\frac{\partial E_{t}}{\partial w^e_{ij}} = \frac{\partial E_{t}}{\partial s^{d
 
 Where,
 
+
