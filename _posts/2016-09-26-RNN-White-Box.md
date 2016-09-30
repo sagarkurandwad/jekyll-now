@@ -1,6 +1,7 @@
 ---
 layout: post
 title: RNN White Box
+date: "2016-09-26"
 use_math: true
 comments: true
 ---
