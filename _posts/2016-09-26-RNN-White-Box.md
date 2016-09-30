@@ -128,7 +128,7 @@ $$\alpha^e_{t,lh}$$ and $$\beta^e_{t,ij}$$ are messages passed acoss the encoder
 
 In sentiment analysis, a sequence of words is classified into positive or negative sentiments. $Figure\;4$ shows the architecture for such applications.
 
-![](/images/RNNIpSequence.jpg  "RNN architecture for unsynchronized input and output sequences")
+![](/images/RNNIpSequence.jpg  "RNN architecture for sequence of inputs")
 
 Gradient computations are very straight forward in this case.
 
@@ -151,4 +151,14 @@ $$k \in \{1,2,3....K\}; \;i,j,h \in \{1,2,3....H\}; \;d \in \{1,2,3....D\}$$
 $$\alpha_{-1,dh} = 0; \;\beta_{-1,ij} = 0; \;s^h_{-1} = 0$$
 
 ### Output sequences
+
+![](/images/RNNOpSequence.jpg  "RNN architecture for sequence of outputs")
+
+Image captioning takes an image and outputs a sequence of words (RNN architecture in $Figure\;5$). Refer equations  $(\ref{2})$,  $(\ref{3})$,  $(\ref{5})$ for $\frac{\partial E_{t}}{\partial y^k_{t}}$, $\frac{\partial E_{t}}{\partial s^h_{t}}$ and $\beta_{t,ij}$ respectively. Target gradients $\frac{\partial E}{\partial v_{hk}}$, $\frac{\partial E}{\partial u_{dh}}$, $\frac{\partial E}{\partial w_{ij}}$ can be computed using $(\ref{6})$,  $(\ref{7})$ and $(\ref{8})$. $\alpha_{t,dh}$, on the other hand, is computed as below:
+
+
+
+
+
+
 
