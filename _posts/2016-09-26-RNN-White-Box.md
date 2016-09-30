@@ -100,7 +100,7 @@ $$\beta^d_{t,ij} = \frac{\partial s^{d,j}_{t}}{\partial w^d_{ij}} + \frac{\parti
 
 $$\gamma^d_{t,ij} = \frac{\partial s^{d,j}_{t}}{\partial w^e_{ij}} + \frac{\partial s^{d,j}_{t}}{\partial s^{e,j}_{T_e}}\beta^e_{T_e,ij} + \frac{\partial s^{d,j}_{t}}{\partial s^{d,j}_{t-1}}\gamma^d_{t-1,ij} \tag{15}\label{15}$$
 
-$$\zeta^d_{t,lh} = \frac{\partial s^{d,h}_{t}}{\partial s^{d,h}_{t-1}} [ \frac{\partial s^{d,h}_{t-1}}{\partial s^{e,h}_{T_e}}\alpha^e_{T_e,lh} + \zeta^d_{t-1,lh} ] \tag{16}\label{16}$$
+$$\zeta^d_{t,lh} = \frac{\partial s^{d,h}_{t}}{\partial s^{e,h}_{T_e}}\alpha^e_{T_e,lh} + \frac{\partial s^{d,h}_{t}}{\partial s^{d,h}_{t-1}} \zeta^d_{t-1,lh}  \tag{16}\label{16}$$
 
 Hence,
 
@@ -110,7 +110,7 @@ $$\frac{\partial E_{t}}{\partial u^d_{kh}} = \frac{\partial E_{t}}{\partial s^{d
 
 $$\frac{\partial E_{t}}{\partial w^d_{ij}} = \frac{\partial E_{t}}{\partial s^{d,j}_{t}}\beta^d_{t,ij} \tag{19}\label{19}$$
 
-$$\frac{\partial E_{t}}{\partial u^e_{lh}} = \frac{\partial E_{t}}{\partial s^{e,h}_{T_e}}\alpha^e_{T_e,lh} + \frac{\partial E_{t}}{\partial s^{d,h}_{t}}\zeta^d_{t-1,lh} \tag{20}\label{20}$$
+$$\frac{\partial E_{t}}{\partial u^e_{lh}} = \frac{\partial E_{t}}{\partial s^{d,h}_{t}}\zeta^d_{t,lh}  \tag{20}\label{20}$$
 
 $$\frac{\partial E_{t}}{\partial w^e_{ij}} = \frac{\partial E_{t}}{\partial s^{d,j}_{t}}\gamma^d_{t,ij} \tag{21}\label{21}$$
 
@@ -124,6 +124,7 @@ $$\alpha^d_{-1,kh} = 0; \;\beta^d_{-1,ij} = 0; \;\gamma^d_{-1,ij} = 0, \;\zeta^d
 
 
 $$\alpha_{t,dh}, \;\beta_{t,ij}$$ and $$\frac{\partial s^h_{t}}{\partial s^h_{t-1}}$$ are messages that are passed along the RNN as shown in $Figure\;2$.
+
 
 
 
