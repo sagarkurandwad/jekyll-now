@@ -13,8 +13,8 @@ layout: default
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
 
-  
+  {% if site.disqus %}
+    {% include disqus.html %}
+  {% endif %}
+
 </article>
-{% if site.disqus_shortname %}
-  {% include disqus.html %}
-{% endif %}
