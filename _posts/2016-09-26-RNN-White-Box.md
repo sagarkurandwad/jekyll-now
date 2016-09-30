@@ -4,7 +4,6 @@ title: RNN White Box
 use_math: true
 comments: true
 ---
-September 26, 2016
 
 * Resources for learning RNN.  
 * Backpropagation Through Time in detail.
