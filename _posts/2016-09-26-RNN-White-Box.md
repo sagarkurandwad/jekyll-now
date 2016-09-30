@@ -100,7 +100,7 @@ $$\beta^d_{t,ij} = \frac{\partial s^{d,j}_{t}}{\partial w^d_{ij}} + \frac{\parti
 
 $$\gamma^d_{t,ij} = \frac{\partial s^{d,j}_{t}}{\partial w^e_{ij}} + \frac{\partial s^{d,j}_{t}}{\partial s^{d,j}_{t-1}}\gamma^d_{t-1,ij} \tag{15}\label{15}$$
 
-$$\zeta^d_{t,lh} = \frac{\partial s^{d,h}_{t}}{\partial s^{d,h}_{t-1}} \[ \frac{\partial s^{d,h}_{t-1}}{\partial s^{e,h}_{T_e}}\alpha^e_{T_e,lh} + \zeta^d_{t-1,lh} \]
+$$\zeta^d_{t,lh} = \frac{\partial s^{d,h}_{t}}{\partial s^{d,h}_{t-1}} \[ \frac{\partial s^{d,h}_{t-1}}{\partial s^{e,h}_{T_e}}\alpha^e_{T_e,lh} + \zeta^d_{t-1,lh} \] \tag{16}\label{16}$$
 
 Where,
  
