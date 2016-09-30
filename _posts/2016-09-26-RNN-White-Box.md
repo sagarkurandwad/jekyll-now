@@ -167,4 +167,3 @@ $$\alpha_{0,dh} = \frac{\partial s^h_{0}}{\partial u_{dh}}$$
 
 
 
-
