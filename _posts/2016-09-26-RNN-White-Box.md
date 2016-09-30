@@ -90,6 +90,17 @@ $$\beta^e_{t,ij} = \frac{\partial s^{e,j}_{t}}{\partial w^e_{ij}} + \frac{\parti
 
 For decoder compute:
 
+$$\frac{\partial E_{t}}{\partial y^k_{t}} \tag{11}\label{11}$$
+
+$$\frac{\partial E_{t}}{\partial s^{d,h}_{t}} = \sum_{k=1}^K \frac{\partial E_{t}}{\partial y^k_{t}}\frac{\partial y^k_{t}}{\partial s^{d,h}_{t}} \tag{12}\label{12}$$
+
+$$\alpha^d_{t,kh} = \frac{\partial s^{d,h}_{t}}{\partial u^d_{kh}} + \frac{\partial s^{d,h}_{t}}{\partial s^{d,h}_{t-1}}\alpha^d_{t-1,kh} \tag{13}\label{13}$$
+
+$$\beta^d_{t,ij} = \frac{\partial s^{d,j}_{t}}{\partial w^d_{ij}} + \frac{\partial s^{d,j}_{t}}{\partial s^{d,j}_{t-1}}\beta^d_{t-1,ij} \tag{14}\label{14}$$
+
+
+Where,
+ 
 
 
 
