@@ -110,10 +110,9 @@ $$\frac{\partial E_{t}}{\partial u^d_{kh}} = \frac{\partial E_{t}}{\partial s^{d
 
 $$\frac{\partial E_{t}}{\partial w^d_{ij}} = \frac{\partial E_{t}}{\partial s^{d,j}_{t}}\beta^d_{t,ij} \tag{19}\label{19}$$
 
-$$\frac{\partial E_{t}}{\partial u^e_{lh}} = \frac{\partial E_{t}}{\partial s^{e,h}_{T_e}}\alpha^e_{T_e,lh} + \frac{\partial E_{t}}{\partial s^{d,h}_{t}}$$\zeta^d_{t-1,lh} \tag{20}\label{20}$$
+$$\frac{\partial E_{t}}{\partial u^e_{lh}} = \frac{\partial E_{t}}{\partial s^{e,h}_{T_e}}\alpha^e_{T_e,lh} + \frac{\partial E_{t}}{\partial s^{d,h}_{t}}\zeta^d_{t-1,lh} \tag{20}\label{20}$$
 
 $$\frac{\partial E_{t}}{\partial w^e_{ij}} = \frac{\partial E_{t}}{\partial s^{d,j}_{t}}\gamma^d_{t,ij} \tag{21}\label{21}$$
 
 Where,
-
 
