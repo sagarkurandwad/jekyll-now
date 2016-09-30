@@ -146,3 +146,9 @@ $$\frac{\partial E}{\partial w_{ij}} = \frac{\partial E}{\partial s^j_{T}}\beta_
 
 where $$\alpha_{t,dh}$$ and $$\beta_{t,ij}$$ are given by equations $(\ref{4})$ and $(\ref{5})$ respectively.
 
+$$k \in \{1,2,3....K\}; \;i,j,h \in \{1,2,3....H\}; \;d \in \{1,2,3....D\}$$ 
+
+$$\alpha_{-1,dh} = 0; \;\beta_{-1,ij} = 0; \;s^h_{-1} = 0$$
+
+### Output sequences
+
