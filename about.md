@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
-permalink: /Sagar Kurandwad/
+title: Sagar Kurandwad
+permalink: /about/
 ---
 
 
