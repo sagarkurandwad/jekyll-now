@@ -128,5 +128,20 @@ $$\alpha^e_{t,lh}$$ and $$\beta^e_{t,ij}$$ are messages passed acoss the encoder
 
 In sentiment analysis, a sequence of words is classified into positive or negative sentiments. $Figure\;4$ shows the architecture for such applications.
 
-![](/images/RNNUnSyncIpOpMessage.jpg  "RNN architecture for unsynchronized input and output sequences")
+![](/images/RNNIpSequence.jpg  "RNN architecture for unsynchronized input and output sequences")
 
+Gradient computations are very straight forward in this case.
+
+$$\frac{\partial E}{\partial y^k} \tag{22}\label{22}$$
+
+$$\frac{\partial E}{\partial s^h_{T}} = \sum_{k=1}^K \frac{\partial E}{\partial y^k}\frac{\partial y^k}{\partial s^h_{T}} \tag{23}\label{23}$$
+
+And,
+
+$$\frac{\partial E}{\partial v_{hk}} = \frac{\partial E}{\partial y^k}\frac{\partial y^k}{\partial v_{hk}} \tag{24}\label{24}$$
+
+$$\frac{\partial E}{\partial u_{dh}} = \frac{\partial E}{\partial s^h_{T}}\alpha_{T,dh} \tag{25}\label{25}$$
+
+$$\frac{\partial E}{\partial w_{ij}} = \frac{\partial E}{\partial s^j_{T}}\beta_{T,ij} \tag{26}\label{26}$$
+
+where $$\alpha_{t,dh}$$ and $$\beta_{t,ij}$$ are given by equations $(\ref{4})$ and $(\ref{5})$ respectively.
