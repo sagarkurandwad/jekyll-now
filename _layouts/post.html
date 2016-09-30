@@ -16,4 +16,6 @@ layout: default
 
   {% include disqus.html %}
 </article>
-
+{% if site.disqus %}
+  {% include disqus.html %}
+{% endif %}
