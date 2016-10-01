@@ -161,7 +161,7 @@ $$\alpha_{t,dh} = \frac{\partial s^h_{t}}{\partial s^h_{t-1}}\alpha_{t-1,dh} \ta
 
 where,
 
-$$\alpha_{0,dh} = \frac{\partial s^h_{0}}{\partial u_{dh}}$$
+$$\alpha_{0,dh} = \frac{\partial s^h_{0}}{\partial u_{dh}} \tag{28}\label{28}$$
 
 $$k \in \{1,2,3....K\}; \;i,j,h \in \{1,2,3....H\}; \;d \in \{1,2,3....D\}$$ 
 
