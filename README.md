@@ -4,6 +4,6 @@ I am a machine learning researcher, passionate about learning and sharing. I lov
 
 Other interests include:
 
-Mixed Martial Arts
-Meditation
-Travel
+Mixed Martial Arts  
+Meditation  
+Travel  
