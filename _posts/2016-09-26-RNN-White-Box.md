@@ -169,6 +169,6 @@ $$\alpha_{-1,dh} = 0; \;\beta_{-1,ij} = 0; \;s^h_{-1} = 0$$
 
 ## Conclusion
 
-We have seen how the chain rule of calculus can be used to compute gradients in RNNs of various architectures. The process can be viewed as passing messages across the RNN. Numerical computation of gradients is preferred when the actual implementation is difficult. Update the weights of the network using optimizers such as SGD, Adam, AdaGrad and others. Gradient computation for LSTMs, GRUs and their variants requires a similar approach.
+We have seen how the chain rule of calculus can be used to compute gradients in RNNs for various applications. The process can be viewed as passing messages through RNNs across time. Optimize weights using HF optimization to avoid 'vanishing gradinets' problem. Gradient computations for LSTMs, GRUs and other RNN variants require a similar approach.
 
 
